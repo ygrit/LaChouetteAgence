@@ -11,6 +11,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    
 }
 
 a:hover {
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #ffff/*rgba(255, 255, 255, .7)*/;
 }
 
 .d-bloc button:hover {
@@ -651,7 +652,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black/* #575757!important*/;
 }
 
 .container {
@@ -702,6 +703,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    color: white;
 }
 
 h2 {
@@ -775,11 +777,11 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #3d1604!important/*#F3976C!important*/;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #8E340B/*#F3976C*/;
     color: #FFFFFF!important;
 }
 
@@ -822,7 +824,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1039,4 +1041,23 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+/**CITATION AJOUTEE*/
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+.fa::before{
+    color: white;
 }
