@@ -1,3 +1,7 @@
+/* Polices personnalisées*/
+/*@import url(//db.onlinewebfonts.com/c/ee5d74f0b75c5754c723eb16d34e3d65?family=et-line); */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -1042,7 +1046,7 @@ h4 {
         text-align: center;
     }
 }
-/**CITATION AJOUTEE*/
+/*CITATION AJOUTEE*/
 blockquote {
     margin: 0;
 }
@@ -1058,6 +1062,7 @@ blockquote p {
 blockquote p::before {
     content: '\201C';
 }
+/* icônes social- changement de couleur*/
 .fa::before{
     color: white;
 }
