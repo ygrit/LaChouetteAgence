@@ -52,7 +52,7 @@
                             </button>
                         </div>
                         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-                            <ul class="site-navigation nav navbar-nav">
+                            <ul class="site-navigation nav navbar-nav" tabindex="0" role="button"> <!--ajouté tabindex et role--> 
                                 <li>
                                     <a href="index.html">Accueil</a>
                                 </li>
@@ -93,13 +93,13 @@
                         <div class="col-sm-6">
                             <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                                 <div class="form-group">
-                                    <label>
+                                    <label for="name">
                                         Nom
                                     </label>
                                     <input id="name" class="form-control" required />
                                 </div>
                                 <div class="form-group">
-                                    <label>
+                                    <label for="email">
                                         Adresse email
                                     </label>
                                     <input id="email" class="form-control" type="email" required />
@@ -107,11 +107,12 @@
                                 <div class="form-group">
                                     <label>
                                         Comment nous avez-vous connu ?
-                                    </label>
+                                    
                                     <input class="form-control" type="email" required id="input_504" />
+                                    </label>
                                 </div>
                                 <div class="form-group">
-                                    <label>
+                                    <label for="message">
                                         Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
                                     </label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
                                 </div> 

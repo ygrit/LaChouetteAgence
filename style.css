@@ -1,5 +1,5 @@
 /* Polices personnalisées*/
-/*@import url(//db.onlinewebfonts.com/c/ee5d74f0b75c5754c723eb16d34e3d65?family=et-line); */
+/*@import url( */
 
 
 body {
@@ -330,21 +330,32 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 20px; /*16px*/
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
+.nav > li a:hover{
+/*.nav > li a:focus*/ 
     background: transparent;
+    font-weight:bold; /*ajouté*/
 }
-
+.nav > li a:focus-visible{      /*ajouté*/
+    background:yellow;
+    font-weight: bold;
+}
+.nav > li a:focus:not(:focus-visible){   /*ajouté*/
+    background: transparent; 
+    font-weight:bold;
+}
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
+}
+.nav-toggle a:hover, .nav-toggle a:active, .nav-toggle a:focus{  /*ajouté*/
+background-color: tomato;
 }
 
 .navbar-toggle:hover {
@@ -682,7 +693,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px; /*11px*/
 }
 
 .tight-width-whitespace {
@@ -702,6 +713,7 @@ p {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    letter-spacing: 0.8px; /*ajout dans le bouton*/
 }
 
 .social {
@@ -711,12 +723,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 26px; /*22px*/
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px; /*15px*/
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -781,7 +793,7 @@ h4 {
 }
 
 .tc-white {
-    color: #3d1604!important/*#F3976C!important*/;
+    color:#F2D111!important/*#F3976C!important*/;
 }
 
 .btn-atomic-tangerine {
@@ -910,6 +922,7 @@ h4 {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+        z-index:1; /*ajouté*/
     }
     .b-parallax {
         background-attachment: scroll;
