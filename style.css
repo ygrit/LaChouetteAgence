@@ -9,18 +9,22 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial; /*ajouté*/
 }
 
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
-    
+    cursor:pointer; /*ajouté*/
+    /*outline: none!important;*/
 }
 
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+a:focus, button:focus{
+    font-weight:bold;    /* AJOUTE, A TRAVAILLER PLUS */
 }
 
 #page-loading-blocs-notifaction {
@@ -98,6 +102,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    z-index: -1; /* ajouté*/
 }
 
 .b-parallax {
@@ -354,9 +359,9 @@ a:hover {
     margin: 10px 10px 0 0;
     border: 0px;
 }
-.nav-toggle a:hover, .nav-toggle a:active, .nav-toggle a:focus{  /*ajouté*/
+/*.nav-toggle a:hover, .nav-toggle a:active, .nav-toggle a:focus{  *ajouté*
 background-color: tomato;
-}
+}*/
 
 .navbar-toggle:hover {
     background: transparent!important;
@@ -725,6 +730,7 @@ p {
 h2 {
     font-size: 26px; /*22px*/
     line-height: 1.4em;
+   /* z-index:9999;*/
 }
 
 h3 {
@@ -789,7 +795,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #8E340B; /*changé*/
 }
 
 .tc-white {
@@ -1079,3 +1085,12 @@ blockquote p::before {
 .fa::before{
     color: white;
 }
+
+#bloc-2-services p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer p{
+    font-size: 20px;
+    
+} /*ajouté*/
