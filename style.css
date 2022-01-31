@@ -1,6 +1,3 @@
-/* Polices personnalisées*/
-/*@import url( */
-
 
 body {
     margin: 0;
@@ -342,26 +339,23 @@ a:focus, button:focus{
     text-align: inherit;
 }
 
-.nav > li a:hover{
-/*.nav > li a:focus*/ 
+.nav > li a:hover,
+.nav > li a:focus{
     background: transparent;
     font-weight:bold; /*ajouté*/
 }
-.nav > li a:focus-visible{      /*ajouté*/
-    background:yellow;
+/*.nav > li a:focus-visible{      ajouté
+    background:rgb(255, 187, 0);
     font-weight: bold;
 }
-.nav > li a:focus:not(:focus-visible){   /*ajouté*/
+.nav > li a:focus:not(:focus-visible){   ajouté
     background: transparent; 
     font-weight:bold;
-}
+}*/
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
 }
-/*.nav-toggle a:hover, .nav-toggle a:active, .nav-toggle a:focus{  *ajouté*
-background-color: tomato;
-}*/
 
 .navbar-toggle:hover {
     background: transparent!important;

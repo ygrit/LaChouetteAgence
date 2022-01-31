@@ -38,15 +38,28 @@
 	
 	
    <!-- JSCRIPT--> 
-	<script src="./js/jquery-2.1.0.js" defer></script>
+	<!-- <script src="./js/jquery-2.1.0.js" defer></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"
     integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--ajouté-->
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> <ajouté mais ne fonctionne pas-->
 
-    <!--<script src="./js/bootstrap.min.js"></script>               ENLEVE-->
-    <script src="./js/blocs.js" defer></script>
-    <script src="./js/jquery.touchSwipe.js" defer></script> <!--ajouté, a été dans le dossier js-->
+    <!-- <script src="./js/bootstrap.js" defer></script> -->
+    <!--.min dans le lien, car il n'y a pas dans les dossiers js. ne fonctionne pas si je l'enlève et remplace par celui de plus haut-->
+    <!-- <script src="./js/blocs.js" defer></script> -->
+    <!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
+     <!--ajouté, a été dans le dossier js-->
+
+	<!-- JAVASCRIPT-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<!-- <script src="./js/jquery-2.1.0.js" defer></script> ajouté defer -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"
+		integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script> <!--AJOUTE-->
+	<!-- <script src="./js/bootstrap.js"></script> ENLEVE-->
+	<script src="./js/blocs.js" defer></script> <!--ajouté-->
+	<!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<script src="./js/jqBootstrapValidation.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
     
@@ -62,17 +75,17 @@
                     <nav class="navbar row">
                         <div class="navbar-header">
                             <a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo de la chouette agence" height="40" /></a>
-                            <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            <button aria-label="Menu de navigation" id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+                                <span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
                         </div>
                         <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-                            <ul class="site-navigation nav navbar-nav" tabindex="0" role="button"> <!--ajouté tabindex et role--> 
+                            <ul class="site-navigation nav navbar-nav">  
                                 <li>
-                                    <a href="index.html">Accueil</a>
+                                    <a href="index.html" title="lien vers l'accueil">Accueil</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="contact.html" title="lien vers la page de contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -106,11 +119,11 @@
                 <div class="container bloc-lg">
                     <div class="row">
                         <div class="col-sm-6">
-                            <form id="form_1" method="post" action="#traitement.php" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                            <form id="form_1" action="#traitement.php" method="post" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                                 <div class="form-group">
                                     <label for="name">
                                         Nom
-                                        <input id="name" class="form-control" required aria-label="votre nom"/>
+                                        <input id="name" class="form-control" required />
                                     </label>
                                 </div>
                                 <div class="form-group">
@@ -122,7 +135,7 @@
                                 <div class="form-group">
                                     <label for="input_504">
                                         Comment nous avez-vous connu ?
-                                        <input class="form-control" type="email" required id="input_504" />
+                                        <input class="form-control" type="text" required id="input_504" />
                                     </label>
                                 </div>
                                 <div class="form-group">
@@ -131,8 +144,8 @@
                                     <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
                                     </label>
                                 </div> 
-                                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-                                    Envoyer
+                                <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit"
+                                    value="Envoyer">Envoyer
                                 </button>
                             </form>
                         </div>
@@ -147,7 +160,7 @@
             <!-- bloc-7 END -->
 
             <!-- ScrollToTop Button -->
-            <a class="bloc-button btn btn-d scrollToTop" aria-label="Remonter en haut de page" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+            <a class="bloc-button btn btn-d scrollToTop" aria-label="Remonter en haut de page" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a> <!--ajouté aria-label-->
             <!-- ScrollToTop Button END-->
         </section>
 
@@ -162,26 +175,26 @@
                             </p>
                             <div class="row row-no-gutters social">
                                 <div class="col-sm-3">
-                                    <div class="text-center">
-                                        <a class="social" href="https://twitter.com" target="_blank"
+                                    <div class="text-center"> <!--ajouté rel="noreferrer" / best practice-->
+                                        <a class="social" href="https://twitter.com" rel="noreferrer" target="_blank"
 										title="Notre compte Twitter"><span class="fa fa-twitter icon-md"></span></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="text-center">
-                                        <a class="social" href="https://www.facebook.com" target="_blank"
+                                        <a class="social" href="https://www.facebook.com" rel="noreferrer" target="_blank"
 										title="Notre compte Facebook"><span class="fa fa-facebook icon-md"></span></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="text-center">
-                                        <a class="social" href="https://dribbble.com" target="_blank"
+                                        <a class="social" href="https://dribbble.com" rel="noreferrer" target="_blank"
 										title="Notre compte Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="text-center">
-                                        <a class="social" href="https://www.instagram.com" target="_blank"
+                                        <a class="social" href="https://www.instagram.com" rel="noreferrer" target="_blank"
 										title="Notre compte Instagram"><span class="fa fa-instagram icon-md"></span></a>
                                     </div>
                                 </div>

@@ -27,23 +27,25 @@
 	<!--<link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> ENLEVE-->
 
 	<!--AJOUTES-->
+	<!-- CSS-->	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"
 		integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<script src="./js/jquery-2.1.0.js" defer></script> <!--ajouté defer-->
+	<!-- JAVASCRIPT-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<!-- <script src="./js/jquery-2.1.0.js" defer></script> ajouté defer -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"
 		integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--AJOUTE-->
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script> <!--AJOUTE-->
 	<!-- <script src="./js/bootstrap.js"></script> ENLEVE-->
 	<script src="./js/blocs.js" defer></script> <!--ajouté-->
-	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
 	<!-- Analytics -->
 
@@ -71,7 +73,7 @@
 							</button>
 						</div>
 						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-							<ul class="site-navigation nav navbar-nav">
+							<ul class="site-navigation nav navbar-nav" tabindex="0" role="list"> <!--ajouté tabindex et role--> 
 								<li>
 									<a href="index.html">Accueil</a>
 								</li>
@@ -82,11 +84,11 @@
 						</div>
 					</nav>
 				</div>
-			</div>
+			</div>  <!--A VERIFIER-->
 			<!-- bloc-0 END -->
 
 			<!-- bloc-1-presentation -->
-			<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
+			<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper b-parallax"
 				id="bloc-1-hero">
 				<div class="container bloc-lg">
 					<div class="row tight-width-whitespace">
@@ -157,7 +159,7 @@
 					<div class="row voffset-lg voffset">
 						<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
 							<!--<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" />
-	REMPLACEE PAR LA FIGURE PLUS BAS-->
+	REMPLACEE PAR LE TEXTE PLUS BAS-->
 							<!--<figure>-->
 								<blockquote cite="href#">
 									<p>La chouette agence est une excellente agence web ! Les web designers ont réussi à
@@ -211,19 +213,21 @@
 				<div class="row tight-width-whitespace portfolio-row">
 					<div class="col-sm-6">
 						<!--A CHANGER ALT-->
-						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1"
+						<a href="#" data-lightbox="img/journal-local_320.jpg" data-gallery-id="gallery-1"
 							data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-<!-- 
+ 
 							<picture>
-								<source srcset="img/1_345.jpg" media="(min-width: 375px)">
+								<!--<source srcset="img/1_345.jpg" media="(min-width: 375px)">
 								<source srcset="img/1_395.jpg" media="(min-width: 425px)">
-								<img src="img/1_290.jpg" alt="" />
-							</picture> -->
+								<img src="img/1_290.jpg" alt="" /> -->
+							
 
 <!--Ajouté loading lazy aux images du bas-->
-							<img src="img/1_small.jpg"
-								alt="Photo des journaux avec des pages colorées" loading="lazy" 
-								class="img-responsive portfolio-thumb" />
+								<source type="image/jpg" srcset="img/journal-local_320.jpg">
+								<img class="img-responsive portfolio-thumb" src="img/journal-local_370.jpg" loading="lazy"
+								alt="Photo des journaux avec des pages colorées"  
+								 />
+							</picture>
 						</a>
 						<h3 class="mg-md text-center">
 							Refonte d'un site web pour un journal local
@@ -234,10 +238,14 @@
 					</div>
 					<div class="col-sm-6">
 						<!--CHANGE ALT-->
-						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1"
-							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img
-								src="img/2.jpg" class="img-responsive portfolio-thumb"
-								alt="Profil d'une jeune femme avec la caméra professionnelle dans la ville nocturne" loading="lazy"/></a>
+						<a href="#" data-lightbox="img/site-photographe_370.jpg" data-gallery-id="gallery-1"
+							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+							<picture>
+								<source type="image/jpg" srcset="img/site-photographe_370.jpg">
+								<img class="img-responsive portfolio-thumb" src="img/site-photographe_370.jpg" 
+									alt="Profil d'une jeune femme avec la caméra professionnelle dans la ville nocturne" loading="lazy"/>
+							</picture>
+							</a>
 						<h3 class="mg-md text-center">
 							Création d'un site web pour photographes
 						</h3>
@@ -249,10 +257,14 @@
 				<div class="row tight-width-whitespace portfolio-row">
 					<div class="col-sm-6">
 						<!--CHANGE ALT-->
-						<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1"
-							data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img
-								src="img/3.jpg" class="img-responsive portfolio-thumb"
-								alt="Une photo des artciles indispensables pour les voyageurs: les appareils photo, ordinateur portable, batteries etc" loading="lazy"/></a>
+						<a href="#" data-lightbox="img/site-voyageur_370.jpg" data-gallery-id="gallery-1"
+							data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+							<picture>
+								<source type="image/jpg" srcset="img/site-voyageur_370.jpg">
+								<img class="img-responsive portfolio-thumb" src="img/site-voyageur_370.jpg" 
+								alt="Une photo des artciles indispensables pour les voyageurs: les appareils photo, ordinateur portable, batteries etc" loading="lazy"/>
+							</picture>
+							</a>
 						<h3 class="mg-md text-center">
 							Création d'un site internet pour un voyageur
 						</h3>
@@ -263,10 +275,14 @@
 					</div>
 					<div class="col-sm-6">
 						<!--CHANGE ALT-->
-						<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1"
-							data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img
-								src="img/4.jpg" class="img-responsive portfolio-thumb"
-								alt="vue sur un bureau en bois blanchi avec un oridnateur, des cartes d'invitation, rubains de couleur pastel, emballages cadeau" loading="lazy"/></a>
+						<a href="#" data-lightbox="img/agence-de-mariage_370.jpg" data-gallery-id="gallery-1"
+							data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+							<picture>
+								<source type="image/jpg" srcset="img/agence-de-mariage_370.jpg">
+								<img class="img-responsive portfolio-thumb" src="img/agence-de-mariage_370.jpg" 
+								alt="vue sur un bureau en bois blanchi avec un oridnateur, des cartes d'invitation, rubains de couleur pastel, emballages cadeau" loading="lazy"/>
+							</picture>
+						</a>
 						<h3 class="mg-md text-center">
 							Conception d'un site pour une agence de mariage
 						</h3>
@@ -305,26 +321,26 @@
 						</p>
 						<div class="row row-no-gutters social" aria-label="trouvez-nous sur les réseaux sociaux">
 							<div class="col-sm-3">
-								<div class="text-center">
-									<a class="social" href="https://twitter.com" target="_blank"
-										title="Notre compte Twitter"><span class="fa fa-twitter icon-md"></span></a>
+								<div class="text-center"> <!--ajouté rel="noreferrer" pour les liens/Best Practice-->
+									<a class="social" href="https://twitter.com" rel="noreferrer" target="_blank"
+										title="Notre compte Twitter" ><span class="fa fa-twitter icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://www.facebook.com" target="_blank"
+									<a class="social" href="https://www.facebook.com" rel="noreferrer" target="_blank"
 										title="Notre compte Facebook"><span class="fa fa-facebook icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://dribbble.com" target="_blank"
+									<a class="social" href="https://dribbble.com" rel="noreferrer" target="_blank"
 										title="Notre compte Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://www.instagram.com" target="_blank"
+									<a class="social" href="https://www.instagram.com" rel="noreferrer" target="_blank"
 										title="Notre compte Instagram"><span class="fa fa-instagram icon-md"></span></a>
 								</div>
 							</div>
