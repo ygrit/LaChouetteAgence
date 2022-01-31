@@ -341,7 +341,7 @@ a:focus, button:focus{
 
 .nav > li a:hover,
 .nav > li a:focus{
-    background: transparent;
+    background: #f5eadc;
     font-weight:bold; /*ajouté*/
 }
 /*.nav > li a:focus-visible{      ajouté
@@ -724,6 +724,8 @@ p {
 h2 {
     font-size: 26px; /*22px*/
     line-height: 1.4em;
+    text-shadow: 0 1px 2px black; /*ajouté pour plus de visibilité*/
+    padding:0 20px; /*ajouté pour pas dépasser le nombre de mots sur 1 ligne*/
    /* z-index:9999;*/
 }
 
@@ -742,6 +744,7 @@ h3 {
 
 h1 {
     color: #333333!important;
+    text-shadow: 0 1px 3px black; /*ajouté pour plus de visibilité*/
 }
 
 h4 {
@@ -758,8 +761,8 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
-}
+    margin: 0 auto; /*ajouté pour centrer les images*/
+} 
 
 .portfolio-row {
     margin-bottom: 44px;
