@@ -111,7 +111,7 @@ a:focus, button:focus{
 }
 
 .d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
+    color: white;/*rgba(255, 255, 255, .9)*/;
 }
 
 .d-bloc .icon-round,
@@ -140,7 +140,7 @@ a:focus, button:focus{
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .8); /*changé pour contrast*/
 }
 
 .d-bloc .a-btn:hover,
@@ -292,6 +292,7 @@ a:focus, button:focus{
 
 #bloc-1-hero h1 {
     font-size: 32px;
+    font-weight: 500;
 }
 
 .navbar {
@@ -341,7 +342,7 @@ a:focus, button:focus{
 
 .nav > li a:hover,
 .nav > li a:focus{
-    background: #f5eadc;
+    /*background: #f5eadc;*/
     font-weight:bold; /*ajouté*/
 }
 /*.nav > li a:focus-visible{      ajouté
@@ -675,6 +676,7 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
+    text-shadow: 0 1px 3px black; /*ajouté pour plus de visibilité*/
 }
 
 .hero-bloc-text-sub {
@@ -700,10 +702,12 @@ p {
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
+/*h1 {
+    font-family: "Open Sans"; supprimé, existe déjà
+    font-weight: 500;
+    color: #333333!important;
+    
+}*/
 
 .cta-hero {
     margin-top: 22px;
@@ -712,7 +716,7 @@ p {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-    letter-spacing: 0.8px; /*ajout dans le bouton*/
+    letter-spacing: 0.9px; /*ajout dans le bouton*/
 }
 
 .social {
@@ -722,15 +726,16 @@ p {
 }
 
 h2 {
-    font-size: 26px; /*22px*/
+    font-size: 24px; /*22px*/
     line-height: 1.4em;
-    text-shadow: 0 1px 2px black; /*ajouté pour plus de visibilité*/
-    padding:0 20px; /*ajouté pour pas dépasser le nombre de mots sur 1 ligne*/
+    text-shadow: 1px 1px 2px rgb(17, 17, 17); /*ajouté pour plus de visibilité*/
+    font-weight: 500;
+    /*ajouté pour pas dépasser le nombre de mots sur 1 ligne*/
    /* z-index:9999;*/
 }
 
 h3 {
-    font-size: 18px; /*15px*/
+    font-size: 16px; /*15px*/
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -742,14 +747,9 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
+/*h4 {
     color: #333333!important;
-    text-shadow: 0 1px 3px black; /*ajouté pour plus de visibilité*/
-}
-
-h4 {
-    color: #333333!important;
-}
+}*/
 
 .icons {
     margin-bottom: 14px;
@@ -775,7 +775,7 @@ h4 {
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 20px; /*changé du 40*/
 }
 
 .bold-link {
@@ -796,7 +796,10 @@ h4 {
 }
 
 .tc-white {
-    color:#F2D111!important/*#F3976C!important*/;
+    color:#FFF!important;
+}
+.tc-yellow{ /*ajouté pour la visibilité*/
+    color: #F2D111;
 }
 
 .btn-atomic-tangerine {
@@ -804,8 +807,8 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
+.btn-atomic-tangerine:hover { /*changé pour la visibilité*/
+    background: #5f2307!important;
     color: #FFFFFF!important;
 }
 
@@ -923,9 +926,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
+        padding-left: 10px!important; 
         padding-right: 10px!important;
-        z-index:1; /*ajouté*/
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1079,7 +1081,7 @@ blockquote p::before {
     content: '\201C';
 }
 /* icônes social- changement de couleur*/
-.fa::before{
+.fa::before:hover{
     color: white;
 }
 
