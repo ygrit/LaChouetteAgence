@@ -842,11 +842,11 @@ h3 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.avif"); /*remplacé jpg par avif*/
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation.avif"); /* remplacé jpg par avif*/
 }
 
 @media (max-width: 1024px) {
