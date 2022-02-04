@@ -1,12 +1,12 @@
 
 body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial; /*ajouté*/
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial; /*ajouté*/
 }
 
 a,
@@ -62,15 +62,15 @@ a:focus, button:focus{
     padding: 20px 50px;
 }
 
-.bg-center,
+/*.bg-center,
 .bg-l-edge,
 .bg-r-edge,
-/*.bg-t-edge, UNUSED CODE*/
+.bg-t-edge, UNUSED CODE
 .bg-b-edge,
 .bg-tl-edge,
 .bg-bl-edge,
 .bg-tr-edge,
-.bg-br-edge,
+.bg-br-edge,*/
 .bg-repeat {
     -webkit-background-size: auto!important;
     -moz-background-size: auto!important;
@@ -95,11 +95,11 @@ a:focus, button:focus{
     left: 0;
     right: 0;
 }
-
+/*
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -112,7 +112,7 @@ a:focus, button:focus{
 .d-bloc button:hover {
     color: white;/*rgba(255, 255, 255, .9)*/;
 }
-/*
+/*    UNUSED CODE
 .d-bloc .icon-round,
 .d-bloc .icon-square,
 .d-bloc .icon-rounded,
@@ -124,7 +124,7 @@ a:focus, button:focus{
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
 }*/
-/*
+
 .d-bloc .a-btn,
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
@@ -139,7 +139,7 @@ a:focus, button:focus{
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .8); /*changé pour plus de visibilité
+    color: rgba(255, 255, 255, .8); /*changé pour plus de visibilité*/
 }
 
 .d-bloc .a-btn:hover,
@@ -156,9 +156,9 @@ a:focus, button:focus{
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: black;/*rgba(255, 255, 255, 1);*/
 }
-
+/*
 .d-bloc .navbar-toggle .icon-bar {
     background: rgba(255, 255, 255, 1);
 }
@@ -222,7 +222,7 @@ a:focus, button:focus{
     border-color: rgba(0, 0, 0, .1);
 }
 
-.d-bloc .panel .a-btn,
+/*.d-bloc .panel .a-btn,*/
 .l-bloc .a-btn,
 .l-bloc .navbar a,
 .l-bloc .navbar-brand,
@@ -240,7 +240,7 @@ a:focus, button:focus{
     color: rgba(0, 0, 0, .6);
 }
 
-.d-bloc .panel .a-btn:hover,
+/*.d-bloc .panel .a-btn:hover,*/
 .l-bloc .a-btn:hover,
 .l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
@@ -261,14 +261,14 @@ a:focus, button:focus{
 .l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, .6);
 }
-
+/*    UNUSED CODE
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
 .l-bloc .btn-wire:hover {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
-}
+}*/
 
 .voffset {
     margin-top: 30px;
