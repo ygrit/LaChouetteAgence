@@ -13,7 +13,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     cursor:pointer; /*ajouté*/
-    /*outline: none!important;*/
+    /*outline: none!important;   enlevé*/
 }
 
 a:hover {
@@ -344,7 +344,7 @@ a:focus, button:focus{
     /*background: #f5eadc;*/
     font-weight:bold; /*ajouté*/
 }
-/*.nav > li a:focus-visible{          ajouté mais experimental pour instant
+/*.nav > li a:focus-visible{          ajouté, fonctionne mais experimental pour instant, commenté
     background:rgb(255, 187, 0);
     font-weight: bold;
 }
@@ -667,7 +667,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: black/* #575757!important*/;
+    color: black/* #575757!important*   changé/;
 }
 
 .container {
@@ -676,7 +676,7 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
-    text-shadow: 0 1px 3px black; /*ajouté pour plus de contraste/visibilité*/
+    text-shadow: 0 1px 2px black; /*ajouté pour plus de contraste/visibilité*/
 }
 
 .hero-bloc-text-sub {
@@ -694,7 +694,7 @@ a {
 }*/
 
 p {
-    font-size: 18px; /*11px*/
+    font-size: 18px; /*11px;   changé*/
 }
 
 .tight-width-whitespace {
@@ -727,7 +727,7 @@ p {
 }
 
 h2 {
-    font-size: 24px; /*22px*/
+    font-size: 24px; /*22px; changé*/
     line-height: 1.4em;
     text-shadow: 1px 1px 2px rgb(17, 17, 17); /*ajouté pour plus de visibilité*/
     font-weight: 500;
@@ -735,7 +735,7 @@ h2 {
 }
 
 h3 {
-    font-size: 16px; /*15px*/
+    font-size: 16px; /*15px;    changé*/
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -747,7 +747,7 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-/*h4 {
+/*h4 {            UNUSED CODE
     color: #333333!important;
 }*/
 
@@ -798,12 +798,12 @@ h3 {
 .tc-white {
     color:#FFF!important;
 }
-.tc-yellow{ /*ajouté pour la visibilité*/
+.tc-yellow{ /*class ajouté pour la visibilité*/
     color: #F2D111;
 }
 
 .btn-atomic-tangerine {
-    background: #8E340B/*#F3976C*/;
+    background: #8E340B/*#F3976C  changé*/;
     color: #FFFFFF!important;
 }
 
@@ -871,14 +871,15 @@ h3 {
         max-width: 100%
     }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+                /* enlevé max-device-width et remplacé par max-width car obsolete*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)
+ {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -896,10 +897,10 @@ h3 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+    /*.bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    }*/
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -908,8 +909,8 @@ h3 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        /*padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);*/
     }
 }
 
@@ -986,7 +987,7 @@ h3 {
         box-shadow: none;
     }
     .navbar-brand img {
-        /*max-height: 40px; déjà écrit en html*/
+        /*max-height: enlevé déjà écrit en html*/
         width: auto;
     }
     .nav-invert .navbar-header {
@@ -1082,7 +1083,7 @@ blockquote p::before,
 blockquote p::after {
     content: '\201C';
 }
-/* icônes social- changement de couleur*/
+/* code ajouté pour les icônes soc- changement de couleur*/
 .fa::before:hover{
     color: white;
 }

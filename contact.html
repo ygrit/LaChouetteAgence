@@ -4,21 +4,18 @@
     <meta charset="utf-8">
     <title>Contactez La chouette agence - agence de web design à Lyon</title>
     <meta name="description"
-		content="Rendez votre boutique optimisé, qui attire des visiteurs et les convertit en clients, en contactant La chouette agence"> <!--117 lettres-->
+		content="Rendez votre boutique optimisé, qui attire des visiteurs et les convertit en clients, en contactant La chouette agence"> <!--ajouté-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--corrigé, à jour-->
     
     <!--Ajouté :-->
     <meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@la-chouette-agence" />
-	<meta name=”twitter:title” content=”Contactez La chouette agence - agence de web design à Lyon” />
-	<meta name=”twitter:description” content=”Rendez votre boutique optimisé, qui attire des visiteurs et les convertit en clients, en contactant La chouette agence” />
 	<meta name="twitter:creator" content="@la-chouette-agence" />
     <meta property="og:url" content="https://ygrit.github.io/DW-P4-website/contact.html" />
 	<meta property="og:title" content="Contactez La chouette agence - agence de web design à Lyon" />
 	<meta property="og:description" content="Rendez votre boutique optimisé, qui attire des visiteurs et les convertit en clients, en contactant La chouette agence"> 
-	<!--<meta property="og:image" content="" />-->
-    
-<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+	    
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
     <!-- CSS--> 
 
@@ -35,10 +32,9 @@
         
     <link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	
+		
    <!-- JSCRIPT--> 
-	<!-- <script src="./js/jquery-2.1.0.js" defer></script> -->
+	<!-- <script src="./js/jquery-2.1.0.js" defer></script>          remplacés-->
 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"
     integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
@@ -48,8 +44,7 @@
     <!--.min dans le lien, car il n'y a pas dans les dossiers js. ne fonctionne pas si je l'enlève et remplace par celui de plus haut-->
     <!-- <script src="./js/blocs.js" defer></script> -->
     <!-- <script src="./js/jquery.touchSwipe.js" defer></script> -->
-     <!--ajouté, a été dans le dossier js-->
-
+    
 	<!-- JAVASCRIPT-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<!-- <script src="./js/jquery-2.1.0.js" defer></script> ajouté defer -->
@@ -62,7 +57,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha512-BNs09vwMdfabwyH36BehO8DJbV5S6RaO0vXqPqiMhYC8mZ4WsfwwPEVhMOl5D7gyrTSDDv98f3HgaOUDlFhywg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<script src="./js/jqBootstrapValidation.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
-    
 <!-- Analytics END -->
 </head>
 <body>
@@ -94,7 +88,6 @@
             </div>
             <!-- bloc-0 END -->
         </header>
-
         <!-- bloc-6 -->
         <section> 
             <div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
@@ -113,36 +106,37 @@
                 </div>
             </div>
             <!-- bloc-6 END -->
-
             <!-- bloc-7 -->
             <div class="bloc bgc-white l-bloc" id="bloc-7">
                 <div class="container bloc-lg">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <form id="form_1" action="#traitement.php" method="post" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                        <div class="col-sm-6"> <!-- corrections dans le formulaire -->
+                            <form id="form_1" action="traitement.php" method="post" novalidate>
+                                <p id="success-msg">Your message has been sent.</p>
+                                <p id="fail-msg"> Sorry it seems that our mail server is not responding, Sorry for the inconvenience!</p>
                                 <div class="form-group">
                                     <label for="name">
                                         Nom
-                                        <input id="name" class="form-control" required />
                                     </label>
+                                    <input id="name" class="form-control" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">
                                         Adresse email
-                                        <input id="email" class="form-control" type="email" required />
                                     </label>
+                                    <input id="email" class="form-control" type="email" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="input_504">
                                         Comment nous avez-vous connu ?
-                                        <input class="form-control" type="text" required id="input_504" />
                                     </label>
+                                    <input class="form-control" type="text" required id="input_504" />
                                 </div>
                                 <div class="form-group">
                                     <label for="message">
                                         Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-                                    <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
                                     </label>
+                                    <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
                                 </div> 
                                 <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit"
                                     value="Envoyer">Envoyer
@@ -163,7 +157,6 @@
             <a class="bloc-button btn btn-d scrollToTop" title="Remonter en haut de page" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a> <!--ajouté aria-label-->
             <!-- ScrollToTop Button END-->
         </section>
-
         <!-- Footer - bloc-8 -->
         <footer>
             <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -175,7 +168,7 @@
                             </p>
                             <div class="row row-no-gutters social">
                                 <div class="col-sm-3">
-                                    <div class="text-center"> <!--ajouté rel="noreferrer" / best practice-->
+                                    <div class="text-center"> <!--ajouté rel="noreferrer" target, title/ best practice-->
                                         <a class="social" href="https://twitter.com" rel="noreferrer" target="_blank"
 										title="Notre compte Twitter"><span class="fa fa-twitter icon-md"></span>
                                         </a>
@@ -208,7 +201,5 @@
         </footer>
     </div>
     <!-- Principal conteneur END -->
-            
-
 </body>
 </html>
