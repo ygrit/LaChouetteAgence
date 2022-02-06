@@ -70,16 +70,17 @@ a:focus, button:focus{
 .bg-tl-edge,
 .bg-bl-edge,
 .bg-tr-edge,
-.bg-br-edge,*/
+.bg-br-edge,
 .bg-repeat {
     -webkit-background-size: auto!important;
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
     background-size: auto!important;
-}
+}*/
 
 .bg-repeat {
     background: repeat;
+
 }
 
 /*.bg-t-edge {                     UNUSED CODE
@@ -310,6 +311,7 @@ a:focus, button:focus{
 
 .navbar-brand img {
     max-height: 200px;
+    width: auto;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -986,10 +988,10 @@ h3 {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
-        /*max-height: enlevé déjà écrit en html*/
+    /*.navbar-brand img {
+        max-height: enlevé déjà écrit en html
         width: auto;
-    }
+    }*/
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
@@ -1094,5 +1096,4 @@ blockquote p::after {
 }
 footer p{
     font-size: 20px;
-    
 } /*ajouté*/
