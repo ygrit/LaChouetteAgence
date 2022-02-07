@@ -1085,10 +1085,6 @@ blockquote p::before,
 blockquote p::after {
     content: '\201C';
 }
-/* code ajouté pour les icônes soc- changement de couleur*/
-.fa::before:hover{
-    color: white;
-}
 
 #bloc-2-services p{
     padding-left: 10px;
