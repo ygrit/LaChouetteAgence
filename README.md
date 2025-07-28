@@ -4,3 +4,14 @@ Amélioré le référencement du site ;
 Optimisé la taille et la vitesse d’un site web ;
 Réalisé une recherche des bonnes pratiques en développement web ;
 Assuré l'accessibilité d'un site web .
+
+Résultat: 
+<img width="1180" height="826" alt="image" src="https://github.com/user-attachments/assets/a88aa710-167c-4abb-a60d-53defa81cee2" />
+
+<img width="1180" height="826" alt="image" src="https://github.com/user-attachments/assets/adf8d4ab-5e19-4e66-87ae-25e9043b03a3" />
+
+<img width="1350" height="733" alt="image" src="https://github.com/user-attachments/assets/0d65753a-ce96-4e35-bf3e-8bec0ff1f337" />
+<img width="1290" height="816" alt="image" src="https://github.com/user-attachments/assets/2103c8d7-55a2-4210-ae3c-7d73cdd02346" />
+
+
+
